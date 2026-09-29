@@ -1,0 +1,13 @@
+# Dependencies & build output
+node_modules/
+coverage/
+dist/
+
+# Secrets
+.env
+
+# OS / editor
+.DS_Store
+
+# Syllabus PDF (not distributed publicly)
+*.pdf

@@ -1,0 +1,27 @@
+{
+  "name": "bookstore-backend",
+  "version": "1.0.0",
+  "description": "ITEX 320 Bookstore REST API (Express 5)",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --watch src/server.js",
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.11",
+    "supertest": "^7.3.0",
+    "vitest": "^4.1.11"
+  }
+}

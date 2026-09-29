@@ -1,0 +1,37 @@
+:root {
+  font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1000px; margin: 0 auto; padding: 24px 16px; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+h1 { margin: 0; }
+h2 { margin-top: 32px; }
+nav button { margin-left: 8px; }
+button { padding: 6px 14px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; cursor: pointer; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+button.active, button[type='submit'] { background: #1f6feb; border-color: #1f6feb; color: #fff; }
+button.danger { color: #b91c1c; border-color: #fecaca; }
+input, select { padding: 6px 8px; border: 1px solid #cbd5e1; border-radius: 6px; font: inherit; }
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.toolbar input { flex: 1; min-width: 200px; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+th { background: #f1f5f9; font-size: 0.85rem; text-transform: uppercase; color: #64748b; }
+small { color: #64748b; }
+.out { color: #b91c1c; }
+.clickable { cursor: pointer; }
+.clickable:hover { background: #f1f5f9; }
+.pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 12px; }
+.badge { padding: 2px 8px; border-radius: 999px; font-size: 0.8rem; background: #e0f2fe; color: #075985; }
+.badge.admin { background: #fef3c7; color: #92400e; }
+.card { margin-top: 16px; padding: 16px; background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; }
+.card dl { display: grid; grid-template-columns: 140px 1fr; gap: 6px 12px; }
+.card dt { color: #64748b; }
+.card dd { margin: 0; }
+.grid-form { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; align-items: end; }
+.grid-form label { display: flex; flex-direction: column; gap: 4px; font-size: 0.85rem; color: #475569; }
+.error { margin-top: 12px; padding: 12px; border-radius: 8px; background: #fef2f2; color: #991b1b; border: 1px solid #fecaca; }
+.error ul { margin: 8px 0 0; padding-left: 20px; }
