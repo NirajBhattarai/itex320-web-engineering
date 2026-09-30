@@ -665,6 +665,6 @@ Write a **third middleware**, `responseTime`, that adds an `X-Response-Time: 3.4
 
 <div align="center">
 
-⬅️ [Topic 2.1: Backend Foundations](../2.1%20Backend%20Foundations/README.md)  ·  **Topic 2.2**  ·  Topic 2.3: Authentication & Authorization ➡️
+⬅️ [Topic 2.1: Backend Foundations](../2.1%20Backend%20Foundations/README.md)  ·  **Topic 2.2**  ·  [Topic 2.3: Authentication & Authorization ➡️](../2.3%20Authentication%20%26%20Authorization/README.md)
 
 </div>
