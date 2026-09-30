@@ -11,6 +11,8 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 | 2.1 D | Bookstore project: Express 5 API (users + books), Vitest/Supertest tests, React frontend | [Step-by-step guide](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations/PartD-Reference-Implementation.md>) · [Code](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations/bookstore>) |
 | 2.2 | Express Architecture: middleware & dependency injection (Assignment 2.2, extends `users-api`) | [Topic 2.2](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.2 Express Architecture & Middleware/README.md>) |
 | 2.3 | Authentication & Authorization: JWT access/refresh tokens, sessions, OAuth 2.0 (GitHub + PKCE), identity providers, RBAC/ABAC (Assignment 2.3) | [Topic 2.3](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.3 Authentication & Authorization/README.md>) |
+| 2.4 | File Handling & Media Pipelines: Multer uploads, presigned S3 URLs, Sharp image pipeline (Assignment 2.4) | [Topic 2.4](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.4 File Handling & Media Pipelines/README.md>) |
+| 2.5 | Web Security & Hardening: OWASP Top 10, XSS, CSRF, injection, Helmet, CORS, rate limiting, Zod (Assignment 2.5) | [Topic 2.5](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.5 Web Security & Hardening/README.md>) |
 
 ## Run the Bookstore
 

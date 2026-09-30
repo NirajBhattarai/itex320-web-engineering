@@ -1998,6 +1998,6 @@ curl -s -b sita.txt -X POST $API/auth/refresh                                   
 
 <div align="center">
 
-⬅️ [Topic 2.2: Middleware & Dependency Injection](../2.2%20Express%20Architecture%20%26%20Middleware/README.md)  ·  **Topic 2.3**  ·  Topic 2.4: File Handling & Media Pipelines ➡️
+⬅️ [Topic 2.2: Middleware & Dependency Injection](../2.2%20Express%20Architecture%20%26%20Middleware/README.md)  ·  **Topic 2.3**  ·  [Topic 2.4: File Handling & Media Pipelines ➡️](../2.4%20File%20Handling%20%26%20Media%20Pipelines/README.md)
 
 </div>
