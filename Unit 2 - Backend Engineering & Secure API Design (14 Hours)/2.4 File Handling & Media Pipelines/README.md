@@ -39,7 +39,8 @@
 >
 > ```bash
 > cd users-api
-> git checkout main && git pull
+> # First merge your 2.3 pull request on GitHub, then:
+> git checkout main && git pull            # main now contains your 2.3 work
 > git checkout -b assignment-2.4
 > npm install multer@2 sharp @aws-sdk/client-s3 @aws-sdk/s3-request-presigner
 > mkdir -p src/storage tests/fakes
@@ -1290,7 +1291,7 @@ curl -s -X POST $API/users/$ID/avatar -H "Authorization: Bearer $TOKEN" -F "phot
 
 ## 📤 What to submit
 
-1. **Pull Request link** (`assignment-2.4` → `main`) in your **same** `users-api` repository.
+1. **Pull Request link** (`assignment-2.4` → `main`) in your **same** `users-api` repository. Merge it after submitting.
 2. **Screenshots:**
    - a real photo uploaded with curl, and the `medium` avatar opened in the browser
    - `ls -la uploads/avatars/<id>` next to the size of your original photo

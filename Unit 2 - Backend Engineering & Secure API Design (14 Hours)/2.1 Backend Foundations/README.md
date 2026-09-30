@@ -56,6 +56,7 @@ The same `users-api` repository grows through every Unit 2 assignment: **2.1 sca
 
 - Node.js **22.12 or newer** (`node -v`), npm, Git, VS Code
 - ES Modules (`"type": "module"`): relative imports **must** end in `.js`
+- 🪟 **Windows users:** run every command in these guides in **Git Bash** (installed with [Git for Windows](https://git-scm.com/download/win); in VS Code choose *Terminal → New Terminal → ⌄ → Git Bash*). The commands are written for bash (`mkdir -p`, `cp`, `curl` with single quotes) and will **not** work as-is in PowerShell or CMD.
 
 ---
 
@@ -74,8 +75,6 @@ npm install express@5
 
 printf "node_modules/\n.env\n" > .gitignore
 ```
-
-*(Windows PowerShell: create the folders with `mkdir src/config, src/controllers, src/routes, src/services, src/repositories, src/middleware, src/utils, src/validators`.)*
 
 ## Step 2: Target folder structure
 
@@ -131,7 +130,7 @@ BODY_LIMIT=100kb
 ```
 
 ```bash
-cp .env.example .env        # Windows PowerShell: Copy-Item .env.example .env
+cp .env.example .env
 ```
 
 ### `src/config/env.js`
@@ -886,7 +885,7 @@ curl -s -o /dev/null -w "%{http_code}\n" -X DELETE localhost:3000/api/v1/users/<
 curl -s -o /dev/null -w "%{http_code}\n" localhost:3000/api/v1/users/<id>
 ```
 
-💡 On Windows PowerShell use `curl.exe` instead of `curl`, or use Postman / the VS Code REST Client extension.
+💡 Run these in **Git Bash** on Windows. Prefer a GUI? Postman or the VS Code REST Client extension work too.
 
 ```bash
 git add . && git commit -m "feat: layered users REST API (assignment 2.1)"

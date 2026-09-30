@@ -38,7 +38,8 @@
 >
 > ```bash
 > cd users-api
-> git checkout main && git pull            # make sure 2.2 is merged
+> # First merge your 2.2 pull request on GitHub, then:
+> git checkout main && git pull            # main now contains your 2.2 work
 > git checkout -b assignment-2.3
 > npm install jsonwebtoken cookie-parser
 > mkdir -p src/auth src/data
@@ -1069,7 +1070,9 @@ export function createAuthRouter({ authController: c, authenticate }) {
 }
 ```
 
-### C.6 Wire everything: `src/container.js`, `src/app.js`, `src/server.js` (changed)
+### C.6 `src/container.js` (changed)
+
+Adds the refresh-token repository, token/auth services, the GitHub client, `authenticate` and the auth controller.
 
 ```js
 import { config } from './config/env.js';
@@ -1108,6 +1111,10 @@ export function createContainer(overrides = {}) {
   };
 }
 ```
+
+### C.7 `src/app.js` (changed)
+
+Adds `cookieParser()` and mounts the new `/api/v1/auth` router. Both routers now receive the whole container.
 
 ```js
 import cookieParser from 'cookie-parser';
@@ -1148,6 +1155,10 @@ export function createApp(container) {
   return app;
 }
 ```
+
+### C.8 `src/server.js` (changed)
+
+Creates the first admin at startup.
 
 ```js
 import { createApp } from './app.js';
@@ -1966,7 +1977,7 @@ curl -s -b sita.txt -X POST $API/auth/refresh                                   
 
 ## 📤 What to submit
 
-1. **Pull Request link** (`assignment-2.3` → `main`) in your **same** `users-api` repository.
+1. **Pull Request link** (`assignment-2.3` → `main`) in your **same** `users-api` repository. Merge it after submitting.
 2. **Screenshots:**
    - Part E steps 1, 5 and 7: the 401, 403 and 200/403 responses
    - step 3: your decoded JWT payload

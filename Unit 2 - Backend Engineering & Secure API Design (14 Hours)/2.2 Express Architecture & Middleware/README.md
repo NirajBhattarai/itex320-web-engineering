@@ -632,13 +632,13 @@ git add . && git commit -m "test: middleware, controller and API tests with Vite
 git push -u origin assignment-2.2
 ```
 
-Then open a **Pull Request** from `assignment-2.2` into `main` on GitHub. **Don't merge it**; your instructor reviews the PR.
+Then open a **Pull Request** from `assignment-2.2` into `main` on GitHub and submit its link. **After submitting, merge the PR.** The PR page keeps the full diff for your instructor to review, and Assignment 2.3 starts from `main`, so it must contain your 2.2 work.
 
 ---
 
 ## 📤 What to submit
 
-1. **Pull Request link** (`assignment-2.2` → `main`) in the **same** `users-api` repository from Assignment 2.1.
+1. **Pull Request link** (`assignment-2.2` → `main`) in the **same** `users-api` repository from Assignment 2.1. Merge it after submitting.
 2. **Screenshots:**
    - the 415 and 400 curl responses from the checkpoint
    - `npm test` showing **22 passed** (or more)

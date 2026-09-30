@@ -37,7 +37,8 @@
 >
 > ```bash
 > cd users-api
-> git checkout main && git pull
+> # First merge your 2.4 pull request on GitHub, then:
+> git checkout main && git pull            # main now contains your 2.4 work
 > git checkout -b assignment-2.5
 > npm install zod helmet cors express-rate-limit
 > ```
@@ -297,13 +298,40 @@ export const validateBody = (schema) => (req, res, next) => {
 };
 ```
 
-### A.6 `src/routes/users.routes.js`: one small change
+### A.6 `src/routes/users.routes.js` (changed: one line)
 
-The "partial" rule now lives inside `updateUserSchema`, so the option goes away:
+The "partial" rule now lives inside `updateUserSchema`, so `validateBody(updateUserSchema, { partial: true })` becomes just `validateBody(updateUserSchema)` on the `PATCH /:id` route:
 
-```diff
-- router.patch('/:id', requirePermission('users:update'), validateBody(updateUserSchema, { partial: true }), c.update);
-+ router.patch('/:id', requirePermission('users:update'), validateBody(updateUserSchema), c.update);
+```js
+import { Router } from 'express';
+import { requirePermission, requireRole } from '../middleware/authorize.js';
+import { validateBody } from '../middleware/validate-body.js';
+import { validateIdParam } from '../middleware/validate-id.js';
+import { changeRoleSchema } from '../validators/auth.schema.js';
+import { completeUploadSchema, presignSchema } from '../validators/upload.schema.js';
+import { createUserSchema, updateUserSchema } from '../validators/user.schema.js';
+
+export function createUsersRouter({ usersController: c, avatarController: a, authenticate, avatarUpload }) {
+  const router = Router();
+
+  router.use(authenticate);
+  router.param('id', validateIdParam);
+
+  router.get('/',           requireRole('admin'),                                    c.list);
+  router.post('/',          requireRole('admin'), validateBody(createUserSchema),    c.create);
+  router.get('/:id',        requirePermission('users:read'),                         c.getById);
+  router.patch('/:id',      requirePermission('users:update'), validateBody(updateUserSchema), c.update);
+  router.patch('/:id/role', requireRole('admin'), validateBody(changeRoleSchema),    c.changeRole);
+  router.delete('/:id',     requirePermission('users:delete'),                       c.remove);
+
+  // ── New in 2.4: avatars (same ABAC rule as editing the profile) ──
+  router.post('/:id/avatar',          requirePermission('users:update'), avatarUpload,                       a.upload);
+  router.delete('/:id/avatar',        requirePermission('users:update'),                                     a.remove);
+  router.post('/:id/avatar/presign',  requirePermission('users:update'), validateBody(presignSchema),        a.presign);
+  router.post('/:id/avatar/complete', requirePermission('users:update'), validateBody(completeUploadSchema), a.complete);
+
+  return router;
+}
 ```
 
 ---
@@ -916,7 +944,7 @@ done; echo
 
 ## 📤 What to submit
 
-1. **Pull Request link** (`assignment-2.5` → `main`) in your **same** `users-api` repository.
+1. **Pull Request link** (`assignment-2.5` → `main`) in your **same** `users-api` repository. Merge it after submitting.
 2. **Screenshots:**
    - all 7 attacks from Part D with their responses
    - `npm test` showing **131 passed** (or more) and `npm audit` showing 0 vulnerabilities
