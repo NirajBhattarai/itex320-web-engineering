@@ -440,7 +440,7 @@ export class ImageService {
 }
 ```
 
-> 💡 **Pro-Tip:** Sharp is built on **libvips**, written in C, and runs on libuv's **thread pool**. Resizing even a large phone photo typically takes tens of milliseconds and does **not** block the event loop (remember Topic 2.1, Part B). A pure-JavaScript image library would freeze every other request.
+> 💡 **Pro-Tip:** Sharp is built on **libvips**, written in C, and runs on libuv's **thread pool**. Resizing even a large phone photo typically takes tens of milliseconds and does **not** block the event loop (remember the [Event Loop](../2.1%20Backend%20Foundations%20-%20Concepts/2-Nodejs-Event-Loop.md) page). A pure-JavaScript image library would freeze every other request.
 
 ### B.2 `src/services/avatar.service.js` (new)
 

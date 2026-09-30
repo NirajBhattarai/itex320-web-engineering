@@ -1,6 +1,6 @@
-> 📍 **ITEX 320** › **Unit 2** › [**Topic 2.1: Backend Foundations**](README.md) › Part E — Self-Check Quiz
+> 📍 **ITEX 320** › **Unit 2** › [**2.1 Backend Foundations: Concepts**](README.md) › Self-Quiz
 
-# ✅ Part E — Self-Check Quiz
+# ✅ Self-Quiz
 
 <details>
 <summary><b>1. Why does Node.js handle 10,000 concurrent idle WebSocket connections easily but struggle with 10 concurrent image resizes in pure JS?</b></summary>
@@ -34,5 +34,5 @@ Often **404**. Returning 403 confirms the order exists, which leaks information 
 
 ---
 
-| [⬅️ 🛠️ Part D — Build the Bookstore (Step by Step)](PartD-Reference-Implementation.md) | [🏠 Topic 2.1 Overview](README.md) | [🧪 Part F — Student Lab Exercise ➡️](PartF-Student-Lab-Exercise.md) |
+| [⬅️ 🧭 RESTful API Design & Best Practices](3-RESTful-API-Design.md) | [🏠 2.1 Concepts](README.md) | [🛠️ Now build it: Assignment 2.1 ➡️](../2.1%20Backend%20Foundations/README.md) |
 |:---|:---:|---:|

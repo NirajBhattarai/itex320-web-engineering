@@ -1,6 +1,8 @@
-> 📍 **ITEX 320** › **Unit 2** › [**Topic 2.1: Backend Foundations**](README.md) › Part D — Build the Bookstore (Step by Step)
+> 📍 **ITEX 320** › **Unit 2** › **Reference Project: Bookstore**
+>
+> 💡 This is an **optional, larger** full-stack reference (users + books + tests + React). For the graded scaffold, start with **[Assignment 2.1](../2.1%20Backend%20Foundations/README.md)**. The finished code is in [`bookstore/`](bookstore/).
 
-# 🛠️ Part D — Build the Bookstore Project (Step by Step)
+# 🛠️ Reference Project: Build the Bookstore (Step by Step)
 
 ![Node.js](https://img.shields.io/badge/Node.js-%3E%3D22.12-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-5.x-000000?style=flat-square&logo=express&logoColor=white)
@@ -2473,7 +2475,7 @@ flowchart LR
     BR -->|"GET / , /src/App.jsx"| V
 ```
 
-> 🎯 **Key Concept:** The browser thinks everything comes from `localhost:5173` (**same origin**), so there's no CORS error. In production the same effect comes from Nginx routing `/api/` to Node (see [Part A](PartA-Web-Servers-and-Reverse-Proxies.md#a5-production-nginx-configuration)).
+> 🎯 **Key Concept:** The browser thinks everything comes from `localhost:5173` (**same origin**), so there's no CORS error. In production the same effect comes from Nginx routing `/api/` to Node (see [Web Servers & Reverse Proxies](../2.1%20Backend%20Foundations%20-%20Concepts/1-Web-Servers-and-Reverse-Proxies.md#a5-production-nginx-configuration)).
 
 ### `frontend/src/api/client.js`
 
@@ -2937,9 +2939,9 @@ cd .. && git add . && git commit -m "feat(frontend): React UI for books and user
 - [ ] The React app lists, searches, creates and deletes books and users
 - [ ] `.env` and `node_modules/` are **not** in `git status`
 
-> 🚀 **Next:** In [Part F — Lab](PartF-Student-Lab-Exercise.md) you apply this same structure to **your own project's resource**. Topic 2.2 then digs deeper into the middleware pipeline and DI container you just built.
+> 🚀 **Next:** In the [Practice Lab](Practice-Lab.md) you apply this same structure to **your own project's resource**. Topic 2.2 then digs deeper into the middleware pipeline and DI container you just built.
 
 ---
 
-| [⬅️ 🧭 Part C — RESTful API Design & Best Practices](PartC-RESTful-API-Design.md) | [🏠 Topic 2.1 Overview](README.md) | [✅ Part E — Self-Check Quiz ➡️](PartE-Self-Check-Quiz.md) |
+| [⬅️ 🧱 2.1 Concepts](../2.1%20Backend%20Foundations%20-%20Concepts/README.md) | [🛠️ Assignment 2.1](../2.1%20Backend%20Foundations/README.md) | [🧪 Practice Lab ➡️](Practice-Lab.md) |
 |:---|:---:|---:|

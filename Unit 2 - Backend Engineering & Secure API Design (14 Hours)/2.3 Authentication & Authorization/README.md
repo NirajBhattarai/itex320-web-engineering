@@ -822,7 +822,7 @@ export function createUsersRouter({ usersController: c, authenticate }) {
 
 > 💡 **Pro-Tip:** `router.use(authenticate)` runs **before** `router.param('id', ...)`. So `GET /users/123` without a token is **401**, not 400. Never tell anonymous users anything, not even that their id is malformed.
 
-> 🤔 **403 or 404?** When Sita requests Ram's profile we return **403**. Some APIs return **404** instead, to hide that the user exists (see the Topic 2.1 quiz). Both are acceptable; be consistent.
+> 🤔 **403 or 404?** When Sita requests Ram's profile we return **403**. Some APIs return **404** instead, to hide that the user exists (see the [2.1 Self-Quiz](../2.1%20Backend%20Foundations%20-%20Concepts/4-Self-Quiz.md)). Both are acceptable; be consistent.
 
 ---
 

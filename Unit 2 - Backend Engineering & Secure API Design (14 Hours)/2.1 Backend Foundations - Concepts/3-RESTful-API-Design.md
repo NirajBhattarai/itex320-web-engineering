@@ -1,6 +1,6 @@
-> 📍 **ITEX 320** › **Unit 2** › [**Topic 2.1: Backend Foundations**](README.md) › Part C — RESTful API Design & Best Practices
+> 📍 **ITEX 320** › **Unit 2** › [**2.1 Backend Foundations: Concepts**](README.md) › RESTful API Design & Best Practices
 
-# 🧭 Part C — RESTful API Design & Best Practices
+# 🧭 RESTful API Design & Best Practices
 
 ### C.1 REST in one paragraph
 
@@ -110,5 +110,5 @@ Clients should never have to guess the error shape. [RFC 9457](https://www.rfc-e
 
 ---
 
-| [⬅️ 🔄 Part B — The Node.js Event Loop](PartB-Nodejs-Event-Loop.md) | [🏠 Topic 2.1 Overview](README.md) | [🛠️ Part D — Build the Bookstore (Step by Step) ➡️](PartD-Reference-Implementation.md) |
+| [⬅️ 🔄 The Node.js Event Loop](2-Nodejs-Event-Loop.md) | [🏠 2.1 Concepts](README.md) | [✅ Self-Quiz ➡️](4-Self-Quiz.md) |
 |:---|:---:|---:|

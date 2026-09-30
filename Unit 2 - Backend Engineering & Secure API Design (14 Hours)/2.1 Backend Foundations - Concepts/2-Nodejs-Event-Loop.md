@@ -1,6 +1,6 @@
-> 📍 **ITEX 320** › **Unit 2** › [**Topic 2.1: Backend Foundations**](README.md) › Part B — The Node.js Event Loop
+> 📍 **ITEX 320** › **Unit 2** › [**2.1 Backend Foundations: Concepts**](README.md) › The Node.js Event Loop
 
-# 🔄 Part B — The Node.js Event Loop
+# 🔄 The Node.js Event Loop
 
 ### B.1 The mental model
 
@@ -195,7 +195,7 @@ curl -s -o /dev/null -w "ping during worker:   %{time_total}s\n" localhost:3001/
 # ping during worker:   0.001486s   ← ~300× faster: the loop was free
 ```
 
-> 💡 **Pro-Tip:** Spawning a `Worker` per request costs ~30–50 ms and some memory. In production, use a **worker pool** (e.g. [`piscina`](https://github.com/piscinajs/piscina)) that keeps threads warm. And measure before you optimize: `perf_hooks.monitorEventLoopDelay()` tells you if your loop is actually blocked. Try adding its p99 to the Bookstore's `/health` route from [Part D](PartD-Reference-Implementation.md#backendsrcappjs).
+> 💡 **Pro-Tip:** Spawning a `Worker` per request costs ~30–50 ms and some memory. In production, use a **worker pool** (e.g. [`piscina`](https://github.com/piscinajs/piscina)) that keeps threads warm. And measure before you optimize: `perf_hooks.monitorEventLoopDelay()` tells you if your loop is actually blocked. Try adding its p99 to the `/health` route of the [Bookstore reference project](../Reference%20Project%20-%20Bookstore/README.md#backendsrcappjs).
 
 | Scaling tool | What it parallelizes | Shares memory? | Use it for |
 |--------------|---------------------|:---:|-----------|
@@ -205,5 +205,5 @@ curl -s -o /dev/null -w "ping during worker:   %{time_total}s\n" localhost:3001/
 
 ---
 
-| [⬅️ 🌐 Part A — Web Servers vs. Reverse Proxies](PartA-Web-Servers-and-Reverse-Proxies.md) | [🏠 Topic 2.1 Overview](README.md) | [🧭 Part C — RESTful API Design & Best Practices ➡️](PartC-RESTful-API-Design.md) |
+| [⬅️ 🌐 Web Servers vs. Reverse Proxies](1-Web-Servers-and-Reverse-Proxies.md) | [🏠 2.1 Concepts](README.md) | [🧭 RESTful API Design & Best Practices ➡️](3-RESTful-API-Design.md) |
 |:---|:---:|---:|

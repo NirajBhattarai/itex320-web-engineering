@@ -1,6 +1,6 @@
-> 📍 **ITEX 320** › **Unit 2** › [**Topic 2.1: Backend Foundations**](README.md) › Part A — Web Servers vs. Reverse Proxies
+> 📍 **ITEX 320** › **Unit 2** › [**2.1 Backend Foundations: Concepts**](README.md) › Web Servers vs. Reverse Proxies
 
-# 🌐 Part A — Web Servers vs. Reverse Proxies
+# 🌐 Web Servers vs. Reverse Proxies
 
 ### A.1 Who does what?
 
@@ -150,9 +150,9 @@ server {
 
 > ⚠️ **Security Warning:** Behind a proxy, `req.ip` in Express is **always `127.0.0.1`** unless you set `app.set('trust proxy', ...)`. But **never** use `app.set('trust proxy', true)` on a server that is reachable directly from the internet. An attacker can send a fake `X-Forwarded-For: 1.2.3.4` header and bypass IP-based rate limits or audit logs. Trust only the proxy hop you control (`'loopback'`, a specific IP, or a hop count).
 
-> 💡 **Pro-Tip:** Node's `server.keepAliveTimeout` must be **longer** than the proxy's idle timeout for upstream connections (Nginx: 60 s by default, AWS ALB: 60 s). Otherwise Node closes a socket at the same moment Nginx reuses it, and you get random, hard-to-reproduce **502 Bad Gateway** errors. The reference server in [Part D](PartD-Reference-Implementation.md#backendsrcserverjs) uses 65 s.
+> 💡 **Pro-Tip:** Node's `server.keepAliveTimeout` must be **longer** than the proxy's idle timeout for upstream connections (Nginx: 60 s by default, AWS ALB: 60 s). Otherwise Node closes a socket at the same moment Nginx reuses it, and you get random, hard-to-reproduce **502 Bad Gateway** errors. The [Bookstore reference server](../Reference%20Project%20-%20Bookstore/README.md#backendsrcserverjs) uses 65 s.
 
 ---
 
-| ⬅️ — | [🏠 Topic 2.1 Overview](README.md) | [🔄 Part B — The Node.js Event Loop ➡️](PartB-Nodejs-Event-Loop.md) |
+| [⬅️ Concepts overview](README.md) | [🏠 2.1 Concepts](README.md) | [🔄 The Node.js Event Loop ➡️](2-Nodejs-Event-Loop.md) |
 |:---|:---:|---:|

@@ -1,6 +1,6 @@
-> 📍 **ITEX 320** › **Unit 2** › [**Topic 2.1: Backend Foundations**](README.md) › Part F — Student Lab Exercise
+> 📍 **ITEX 320** › **Unit 2** › [**Reference Project: Bookstore**](README.md) › Practice Lab
 
-# 🧪 Part F — Student Lab Exercise
+# 🧪 Practice Lab (optional)
 
 ### 🗺️ Unified Backend Roadmap
 
@@ -25,13 +25,13 @@ graph LR
 
 #### Tasks
 
-- [ ] **T1: Scaffold.** `npm init`, `"type": "module"`, Express 5, the layered `src/` structure from the [Part D Bookstore](PartD-Reference-Implementation.md#04-final-folder-structure) (routes → controllers → services → repositories), plus unit + integration tests, and `dev` / `start` scripts. Add a `.gitignore` and a `.nvmrc` containing `22`.
+- [ ] **T1: Scaffold.** `npm init`, `"type": "module"`, Express 5, the layered `src/` structure from the [Bookstore](README.md#04-final-folder-structure) (routes → controllers → services → repositories), plus unit + integration tests, and `dev` / `start` scripts. Add a `.gitignore` and a `.nvmrc` containing `22`.
 - [ ] **T2: Resource design (on paper first).** In `docs/API.md`, write a table of every endpoint for your resource: method, path, request body, success code, error codes. Include at least one **nested** route (e.g. `GET /events/:id/attendees`).
 - [ ] **T3: Implement CRUD.** All 6 operations (list, get, create, replace, patch, delete) with the correct status codes and a `Location` header on create.
 - [ ] **T4: Query features.** Pagination (`page`, `limit` capped at 100), one filter, and whitelisted sorting with `-` for descending. Return `meta` + `links`.
 - [ ] **T5: Errors.** Every error, including unknown routes, malformed JSON and oversized bodies, returns **RFC 9457** `application/problem+json` with a `requestId`.
-- [ ] **T6: Event loop experiment.** Add `blocking-demo.js` from [Part B §B.5](PartB-Nodejs-Event-Loop.md#b5-blocking-the-event-loop-the-1-nodejs-production-bug). Record the `/ping` latency during blocking vs. worker requests in `docs/EVENT_LOOP.md`, and explain *why* in 3–5 sentences using the phase diagram.
-- [ ] **T7: Reverse proxy.** Run **two** instances (`PORT=3000` and `PORT=3001`) behind Nginx using the config from [Part A §A.5](PartA-Web-Servers-and-Reverse-Proxies.md#a5-production-nginx-configuration). Local option: `brew install nginx` / `apt install nginx`, or the `nginx:stable` Docker image with `host.docker.internal`. Prove load balancing by adding `pid: process.pid` to `/health` and calling it repeatedly through Nginx.
+- [ ] **T6: Event loop experiment.** Add `blocking-demo.js` from [Event Loop §B.5](../2.1%20Backend%20Foundations%20-%20Concepts/2-Nodejs-Event-Loop.md#b5-blocking-the-event-loop-the-1-nodejs-production-bug). Record the `/ping` latency during blocking vs. worker requests in `docs/EVENT_LOOP.md`, and explain *why* in 3–5 sentences using the phase diagram.
+- [ ] **T7: Reverse proxy.** Run **two** instances (`PORT=3000` and `PORT=3001`) behind Nginx using the config from [Web Servers §A.5](../2.1%20Backend%20Foundations%20-%20Concepts/1-Web-Servers-and-Reverse-Proxies.md#a5-production-nginx-configuration). Local option: `brew install nginx` / `apt install nginx`, or the `nginx:stable` Docker image with `host.docker.internal`. Prove load balancing by adding `pid: process.pid` to `/health` and calling it repeatedly through Nginx.
 - [ ] **T8: Graceful shutdown.** Send `SIGTERM` while a slow request is in flight and show it still completes.
 
 #### ✔️ Acceptance criteria (self-grade before submitting)
@@ -58,5 +58,5 @@ graph LR
 
 ---
 
-| [⬅️ ✅ Part E — Self-Check Quiz](PartE-Self-Check-Quiz.md) | [🏠 Topic 2.1 Overview](README.md) | [Topic 2.2 ➡️](../2.2%20Express%20Architecture%20%26%20Middleware/README.md) |
+| [⬅️ 🛠️ Bookstore guide](README.md) | [🧱 2.1 Concepts](../2.1%20Backend%20Foundations%20-%20Concepts/README.md) | [Topic 2.2 ➡️](../2.2%20Express%20Architecture%20%26%20Middleware/README.md) |
 |:---|:---:|---:|
