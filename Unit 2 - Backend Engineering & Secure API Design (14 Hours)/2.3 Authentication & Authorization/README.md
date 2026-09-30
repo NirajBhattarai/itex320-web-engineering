@@ -27,11 +27,11 @@
 | Part | Topic |
 |------|-------|
 | [0](#0-concepts-read-first) | **Concepts:** authentication vs authorization, JWT, sessions, OAuth 2.0, identity providers, RBAC vs ABAC |
-| [A](#-part-a-jwt-login-with-access--refresh-tokens) | **JWT login:** register, login, access + refresh tokens, rotation, logout, change password |
-| [B](#-part-b-authorization-rbac--abac) | **Authorization:** `authenticate`, `requireRole` (RBAC), `requirePermission` (ABAC) |
-| [C](#-part-c-login-with-github-oauth-20--pkce) | **OAuth 2.0:** "Login with GitHub" (Authorization Code + PKCE) |
-| [D](#-part-d-tests) | **Tests:** 79 unit + integration tests |
-| [E](#-part-e-try-it-end-to-end) | **Try it** end to end with curl |
+| [A](#part-a-jwt-login-with-access--refresh-tokens) | **JWT login:** register, login, access + refresh tokens, rotation, logout, change password |
+| [B](#part-b-authorization-rbac--abac) | **Authorization:** `authenticate`, `requireRole` (RBAC), `requirePermission` (ABAC) |
+| [C](#part-c-login-with-github-oauth-20--pkce) | **OAuth 2.0:** "Login with GitHub" (Authorization Code + PKCE) |
+| [D](#part-d-tests) | **Tests:** 79 unit + integration tests |
+| [E](#part-e-try-it-end-to-end) | **Try it** end to end with curl |
 | [📤](#-what-to-submit) | Submission and marking |
 
 > 📌 **Before you start:** Assignment 2.2 must be finished (middleware + DI container, `npm test` green). Then:
@@ -189,7 +189,7 @@ sequenceDiagram
 
 ---
 
-## 🅰️ Part A: JWT login with access + refresh tokens
+## Part A: JWT login with access + refresh tokens
 
 ### Files for Part A
 
@@ -667,7 +667,7 @@ export async function bootstrapAdmin(usersService, { email, password }) {
 
 ---
 
-## 🅱️ Part B: Authorization (RBAC + ABAC)
+## Part B: Authorization (RBAC + ABAC)
 
 ### Files for Part B
 
@@ -826,7 +826,7 @@ export function createUsersRouter({ usersController: c, authenticate }) {
 
 ---
 
-## 🅲 Part C: Login with GitHub (OAuth 2.0 + PKCE)
+## Part C: Login with GitHub (OAuth 2.0 + PKCE)
 
 ### C.1 Register a GitHub OAuth App (5 minutes)
 
@@ -1176,7 +1176,7 @@ process.on('SIGINT', shutdown);
 
 ---
 
-## 🅳 Part D: Tests
+## Part D: Tests
 
 ### D.1 `vitest.config.js` (changed: test env vars)
 
@@ -1908,7 +1908,7 @@ npm test
 
 ---
 
-## 🅴 Part E: Try it end to end
+## Part E: Try it end to end
 
 ```bash
 npm run dev
