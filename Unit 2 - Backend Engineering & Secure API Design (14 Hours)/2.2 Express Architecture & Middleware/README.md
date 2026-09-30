@@ -643,7 +643,7 @@ Then open a **Pull Request** from `assignment-2.2` into `main` on GitHub. **Don'
    - the 415 and 400 curl responses from the checkpoint
    - `npm test` showing **22 passed** (or more)
 3. **Short answers** (3–5 sentences each):
-   1. What happens if a middleware never calls `next()` and never sends a response? Why must `requireJson` come **before** `express.json()`?
+   1. What happens if a middleware never calls `next()` and never sends a response? What would a form-encoded `POST /api/v1/users` return if `requireJson` were registered **after** `app.use('/api/v1/users', ...)`, and why?
    2. Explain Dependency Injection in your own words, using your `container.js` as the example.
    3. Name **two tests** in Part C that could **not** be written with the Assignment 2.1 code, and explain why.
 
