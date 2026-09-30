@@ -9,6 +9,7 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 | 2 | Backend Engineering & Secure API Design | [Unit 2 folder](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)>) |
 | 2.1 | Backend Foundations: web servers, reverse proxies, the Node.js event loop, REST design | [Topic 2.1](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations/README.md>) |
 | 2.1 D | Bookstore project: Express 5 API (users + books), Vitest/Supertest tests, React frontend | [Step-by-step guide](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations/PartD-Reference-Implementation.md>) · [Code](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations/bookstore>) |
+| 2.2 | Express Architecture: middleware & dependency injection (Assignment 2.2, extends `users-api`) | [Topic 2.2](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.2 Express Architecture & Middleware/README.md>) |
 
 ## Run the Bookstore
 
