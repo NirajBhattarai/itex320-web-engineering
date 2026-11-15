@@ -6,6 +6,13 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 
 | Unit | Topic | Link |
 |------|-------|------|
+| 1 | Modern Frontend Engineering and Web Fundamentals | [Unit 1 folder](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)>) |
+| 1.1 | Advanced JavaScript (ES6+): ESM vs CJS, classes, closures, async/await, event loop, `js-fundamentals` lab | [Topic 1.1](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)/1.1 Advanced JavaScript/README.md>) |
+| 1.2 | UI Frameworks (React): components, hooks, Context, routing, SSR/SSG, Vite + React 19 `frontend-lab` | [Topic 1.2](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)/1.2 UI Frameworks - React/README.md>) |
+| 1.3 | Styling Systems: Grid, Flexbox, Tailwind v4, design tokens and design systems | [Topic 1.3](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)/1.3 Styling Systems/README.md>) |
+| 1.4 | State Management: TanStack Query, Redux Toolkit vs Zustand, server vs client state | [Topic 1.4](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)/1.4 State Management/README.md>) |
+| 1.5 | Build Tools: Vite, Webpack concepts, code splitting, bundle analysis | [Topic 1.5](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)/1.5 Build Tools/README.md>) |
+| 1.6 | Web Performance: critical render path, caching layers, Lighthouse before/after | [Topic 1.6](<Unit 1 - Modern Frontend Engineering and Web Fundamentals (8 Hours)/1.6 Web Performance/README.md>) |
 | 2 | Backend Engineering & Secure API Design | [Unit 2 folder](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)>) |
 | 2.1 | Backend Foundations: **concepts** (web servers & reverse proxies, Node.js event loop, RESTful API design, self-quiz) | [Concepts](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations - Concepts/README.md>) |
 | 2.1 | Backend Foundations: **Assignment 2.1**, step-by-step scaffold of the `users-api` (layered Express 5 REST API) | [Assignment 2.1](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.1 Backend Foundations/README.md>) |
@@ -28,6 +35,11 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 | 4.4 | Deployment Strategies: rolling, canary, blue/green, scaling | [Topic 4.4](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.4 Deployment Strategies/README.md>) |
 | 4.5 | PWA Fundamentals: manifest, service worker, offline | [Topic 4.5](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.5 PWA Fundamentals/README.md>) |
 | 4.6 | Modern Trends: Edge, WebAssembly, WebSockets | [Topic 4.6](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.6 Modern Trends/README.md>) |
+| 11 | Tools, Technologies, and Testing WebApps | [Unit 11 folder](<Unit 11 - Tools Technologies and Testing WebApps (7 Hours)>) |
+| 11.1 | Developer Tooling: Git, ESLint/Prettier, npm scripts, browser DevTools | [Topic 11.1](<Unit 11 - Tools Technologies and Testing WebApps (7 Hours)/11.1 Developer Tooling/README.md>) |
+| 11.2 | Unit Testing: Vitest, AAA, mocks, coverage gates | [Topic 11.2](<Unit 11 - Tools Technologies and Testing WebApps (7 Hours)/11.2 Unit Testing/README.md>) |
+| 11.3 | API & Component Testing: Supertest, React Testing Library, MSW | [Topic 11.3](<Unit 11 - Tools Technologies and Testing WebApps (7 Hours)/11.3 API and Component Testing/README.md>) |
+| 11.4 | End-to-End Testing: Playwright smoke suite, fixtures, CI notes | [Topic 11.4](<Unit 11 - Tools Technologies and Testing WebApps (7 Hours)/11.4 End-to-End Testing/README.md>) |
 
 ## Run the Bookstore reference project
 
