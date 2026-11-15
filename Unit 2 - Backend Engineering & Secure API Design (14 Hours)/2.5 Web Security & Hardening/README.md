@@ -978,6 +978,6 @@ done; echo
 
 <div align="center">
 
-⬅️ [Topic 2.4: File Handling & Media Pipelines](../2.4%20File%20Handling%20%26%20Media%20Pipelines/README.md)  ·  **Topic 2.5**  ·  🎓 End of Unit 2 · Next: Unit 3 (Data Persistence & API Integration) ➡️
+⬅️ [Topic 2.4: File Handling & Media Pipelines](../2.4%20File%20Handling%20%26%20Media%20Pipelines/README.md)  ·  **Topic 2.5**  ·  [Unit 3 Topic 3.1: Relational Databases ➡️](../../Unit%203%20-%20Data%20Persistence%20and%20API%20Integration%20(12%20Hours)/3.1%20Relational%20Databases%20-%20SQL/README.md)
 
 </div>

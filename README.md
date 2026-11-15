@@ -14,6 +14,10 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 | 2.4 | File Handling & Media Pipelines: Multer uploads, presigned S3 URLs, Sharp image pipeline (Assignment 2.4) | [Topic 2.4](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.4 File Handling & Media Pipelines/README.md>) |
 | 2.5 | Web Security & Hardening: OWASP Top 10, XSS, CSRF, injection, Helmet, CORS, rate limiting, Zod (Assignment 2.5) | [Topic 2.5](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/2.5 Web Security & Hardening/README.md>) |
 | Ref | Reference project: Bookstore, Express 5 API (users + books), Vitest/Supertest tests, React frontend (optional) | [Guide](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/Reference Project - Bookstore/README.md>) · [Practice Lab](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/Reference Project - Bookstore/Practice-Lab.md>) · [Code](<Unit 2 - Backend Engineering & Secure API Design (14 Hours)/Reference Project - Bookstore/bookstore>) |
+| 3 | Data Persistence and API Integration | [Unit 3 folder](<Unit 3 - Data Persistence and API Integration (12 Hours)>) |
+| 3.1 | Relational Databases (SQL): PostgreSQL via Docker Compose, joins/indexes/transactions, `pg` UsersRepository | [Topic 3.1](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.1 Relational Databases - SQL/README.md>) |
+| 3.2 | NoSQL Databases: Redis vs MongoDB concepts, `redis.js`, refresh tokens + logout denylist in Redis | [Topic 3.2](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.2 NoSQL Databases/README.md>) |
+| 3.3 | ORMs & Query Builders: Prisma schema, migrations, Prisma UsersRepository (Redis tokens unchanged) | [Topic 3.3](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.3 ORMs and Query Builders/README.md>) |
 
 ## Run the Bookstore reference project
 
