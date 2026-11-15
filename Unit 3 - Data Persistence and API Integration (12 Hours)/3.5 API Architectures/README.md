@@ -468,6 +468,6 @@ Add a GraphQL **mutation** `updateUser` that calls `UsersCommandService` (from 3
 
 <div align="center">
 
-⬅️ [Topic 3.4: Distributed Data](../3.4%20Distributed%20Data/README.md)  ·  **Topic 3.5**  ·  Topic 3.6 Microservices (Kafka/RabbitMQ, API gateways) — next
+⬅️ [Topic 3.4: Distributed Data](../3.4%20Distributed%20Data/README.md)  ·  **Topic 3.5**  ·  [Topic 3.6: Microservices ➡️](../3.6%20Microservices/README.md)
 
 </div>
