@@ -21,6 +21,13 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 | 3.4 | Distributed Data: CAP theorem, Redis user cache, CQRS-light, domain events | [Topic 3.4](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.4 Distributed Data/README.md>) |
 | 3.5 | API Architectures: OpenAPI/Swagger, GraphQL, gRPC sidecar | [Topic 3.5](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.5 API Architectures/README.md>) |
 | 3.6 | Microservices: RabbitMQ events, worker consumer, Kafka concepts, Nginx API gateway | [Topic 3.6](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.6 Microservices/README.md>) |
+| 4 | Professional Deployment and Next-Gen Web | [Unit 4 folder](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)>) |
+| 4.1 | Infrastructure & Cloud: Docker multi-stage, Compose, Kubernetes fundamentals | [Topic 4.1](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.1 Infrastructure and Cloud/README.md>) |
+| 4.2 | CI/CD: GitHub Actions, image build/push, Terraform basics | [Topic 4.2](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.2 CI-CD Pipelines/README.md>) |
+| 4.3 | Monitoring & Observability: logs, Prometheus/Grafana, Sentry | [Topic 4.3](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.3 Monitoring and Observability/README.md>) |
+| 4.4 | Deployment Strategies: rolling, canary, blue/green, scaling | [Topic 4.4](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.4 Deployment Strategies/README.md>) |
+| 4.5 | PWA Fundamentals: manifest, service worker, offline | [Topic 4.5](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.5 PWA Fundamentals/README.md>) |
+| 4.6 | Modern Trends: Edge, WebAssembly, WebSockets | [Topic 4.6](<Unit 4 - Professional Deployment and Next-Gen Web (11 Hours)/4.6 Modern Trends/README.md>) |
 
 ## Run the Bookstore reference project
 
