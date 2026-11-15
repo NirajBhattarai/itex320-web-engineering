@@ -522,6 +522,6 @@ npm test
 
 <div align="center">
 
-⬅️ [Topic 3.2: NoSQL Databases](../3.2%20NoSQL%20Databases/README.md)  ·  **Topic 3.3**  ·  Topics 3.4–3.6 coming next (Distributed Data · API Architectures · Microservices)
+⬅️ [Topic 3.2: NoSQL Databases](../3.2%20NoSQL%20Databases/README.md)  ·  **Topic 3.3**  ·  [Topic 3.4: Distributed Data ➡️](../3.4%20Distributed%20Data/README.md)
 
 </div>

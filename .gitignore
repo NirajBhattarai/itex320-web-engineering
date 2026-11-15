@@ -8,6 +8,7 @@ dist/
 
 # OS / editor
 .DS_Store
+.playwright-mcp/
 
 # Syllabus PDF (not distributed publicly)
 *.pdf

@@ -18,6 +18,8 @@ Course material and reference projects for **ITEX 320 Web Engineering**.
 | 3.1 | Relational Databases (SQL): PostgreSQL via Docker Compose, joins/indexes/transactions, `pg` UsersRepository | [Topic 3.1](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.1 Relational Databases - SQL/README.md>) |
 | 3.2 | NoSQL Databases: Redis vs MongoDB concepts, `redis.js`, refresh tokens + logout denylist in Redis | [Topic 3.2](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.2 NoSQL Databases/README.md>) |
 | 3.3 | ORMs & Query Builders: Prisma schema, migrations, Prisma UsersRepository (Redis tokens unchanged) | [Topic 3.3](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.3 ORMs and Query Builders/README.md>) |
+| 3.4 | Distributed Data: CAP theorem, Redis user cache, CQRS-light, domain events | [Topic 3.4](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.4 Distributed Data/README.md>) |
+| 3.5 | API Architectures: OpenAPI/Swagger, GraphQL, gRPC sidecar | [Topic 3.5](<Unit 3 - Data Persistence and API Integration (12 Hours)/3.5 API Architectures/README.md>) |
 
 ## Run the Bookstore reference project
 
